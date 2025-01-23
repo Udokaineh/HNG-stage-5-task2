@@ -39,7 +39,7 @@ allBottons.forEach((btn, index) => {
     imageBox.style.right = `${winWidth - myBtn.left - imageContainer.width}px`;
   });
   btn.addEventListener("mouseleave", () => {
-    imageBox.style.bottom = "10px";
+    imageBox.style.bottom = "5px";
     imageBox.style.right = "10px";
     overlay.classList.remove("active");
     innerDiv.textContent = "Hello, I am your assistant!"
@@ -48,7 +48,7 @@ allBottons.forEach((btn, index) => {
 });
 
 overlay.addEventListener("click", () => {
-  imageBox.style.bottom = "10px";
+  imageBox.style.bottom = "5px";
   imageBox.style.right = "10px";
   overlay.classList.remove("active");
   innerDiv.textContent = "Hello, I am your assistant!"
