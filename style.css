@@ -4,8 +4,8 @@
     padding: 0;
 }
 
-body{
-   padding:  0 60px;
+body {
+    padding: 10px;
 }
 
 a {
@@ -17,6 +17,8 @@ a {
     display: flex;
     justify-content: center;
     align-items: flex-end;
+    padding: 40px 0;
+
 }
 
 .botton {
@@ -24,12 +26,13 @@ a {
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    column-gap: 30px;
-    margin: 40px 120px;
+    gap: 30px;
     position: relative;
     z-index: 2;
+    width: 100%;
     /* border: 2px solid black; */
 }
+
 button {
     border: none;
     outline: none;
@@ -37,26 +40,33 @@ button {
     cursor: pointer;
     border-radius: 8px;
 }
+
 .btn1:hover {
     background-color: rgb(111, 162, 251);
     box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
 }
+
 .btn2:hover {
     background-color: rgb(221, 178, 205);
     box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
 }
+
 .btn3:hover {
     background-color: rgb(236, 203, 157);
     box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
 }
+
 .btn4:hover {
-    background-color: rgb(110, 213, 10);
+    background-color: #0072b1;
+    color: white;
     box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
 }
+
 .btn5:hover {
     background-color: rgb(223, 245, 245);
     box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
 }
+
 .btn6:hover {
     background-color: rgb(173, 163, 238);
     box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
@@ -65,13 +75,14 @@ button {
 .image-div img {
     width: 120px;
 }
+
 .image-div {
-    width:fit-content;
+    width: fit-content;
     position: absolute;
     padding-top: 20px;
     bottom: 10px;
     right: 10px;
-    background-color: transparent; 
+    background-color: transparent;
     width: fit-content;
     padding: 20px 10px;
     display: flex;
@@ -79,21 +90,22 @@ button {
     align-items: flex-start;
     font-family: sans-serif;
     color: black;
-    transition: 0.7s ease-in-out ;
+    transition: 0.7s ease-in-out;
     text-align: center;
     z-index: 5;
 }
+
 /* .inner-div {
     width: 80px;
 }
 .inner-div p{
     text-align: center;
 } */
-.image-div img {
-    /* visibility: hidden; */
-}
+/* .image-div img {
+    visibility: hidden;
+} */
 
- 
+
 .overlay {
     position: absolute;
     width: 100%;
@@ -104,8 +116,23 @@ button {
     background-color: transparent;
     background-color: black;
     /* z-index: 2; */
-  }
-  
-  .overlay.active{
-      opacity: 1;
-  }
+}
+
+.overlay.active {
+    opacity: 1;
+}
+
+
+@media (max-width:840px) {
+    .botton {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width:450px) {
+    .botton {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}

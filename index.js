@@ -16,7 +16,7 @@ const bottonExplanation = [
   { content: "Click to watch cartoons" },
   { content: "Click to plan your travels?" },
   { content: "Click to go stream a movie" },
-  { content: "Click to follow me on twitter" },
+  { content: "Click to follow me on LinkedIn" },
   { content: "Click to see my portfolio" },
   { content: "Click to go shopping" },
 ];
@@ -27,8 +27,8 @@ allBottons.forEach((btn, index) => {
   const myBtn = btn.getBoundingClientRect();
   // myBtn.right;
   btn.addEventListener("mouseover", () => {
-    // add exolanation based on the index on the array
-   
+    // add explanation based on the index on the array
+
     innerDiv.textContent = bottonExplanation[index].content;
 
     // // make the overlay visible if it isnt already is
